@@ -1,0 +1,9 @@
+#!/bin/bash
+
+g++ -std=c++14 -o diary \
+    main.cpp newrecord.cpp \
+    ../tvision/build/libtvision.a \
+    -I../tvision/include \
+    -lncursesw \
+    -lgpm
+
